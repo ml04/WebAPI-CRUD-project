@@ -1,0 +1,50 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ComboBox DisplayMemberPath="departmentDesc" 
+                  Grid.Row="0" x:Name="cbox" SelectedIndex="0" 
+                  HorizontalAlignment="Left" RenderTransformOrigin="-1.964,0.68" Margin="10,5,0,5" Width="222" 
+                  Grid.Column="1" SelectionChanged="cbox_SelectionChanged" />
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Department description:" Margin="5,4,0,6" />
+
+        <DataGrid Focusable="True" x:Name="MyGrid"  Grid.Row="1" AutoGenerateColumns="False" 
+                   Grid.ColumnSpan="2" MouseDoubleClick="MyGrid_MouseDoubleClick" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header ="Employee No" Binding="{Binding employeeNo}"  Width="100" >
+                    <DataGridTextColumn.CellStyle>
+                        <Style>
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header ="Name" Binding="{Binding employeeName}" Width="*" />
+
+                <DataGridTextColumn Header ="Salary" Binding="{Binding salary}" Width="*" />
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Grid.Row="1" Grid.Column="2" x:Name="btn_Edit" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Height="25" Margin="20,10,20,0" RenderTransformOrigin="0.32,0.48" Click="Edit_Click">EDIT</Button>
+        <Button Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Height="25" Margin="20,60,20,0" Click="Add_Click" >ADD</Button>
+
+
+    </Grid>
+</Window>

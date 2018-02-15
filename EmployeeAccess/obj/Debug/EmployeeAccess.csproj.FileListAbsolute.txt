@@ -1,0 +1,10 @@
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EmployeeAccess.dll.config
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EmployeeAccess.dll
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EmployeeAccess.pdb
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EntityFramework.dll
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EntityFramework.SqlServer.dll
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EntityFramework.xml
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\bin\Debug\EntityFramework.SqlServer.xml
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\obj\Debug\EmployeeAccess.csprojResolveAssemblyReference.cache
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\obj\Debug\EmployeeAccess.dll
+F:\Hammer\VisualStudio Projects\WebAPIHammer\EmployeeAccess\obj\Debug\EmployeeAccess.pdb
